@@ -3,7 +3,7 @@ import { Button } from '../components/Button';
 import { AuthLayout } from '../layouts/AuthLayout';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { logInAccount } from '../store/slices/thunks';
+import { logInAccount } from '../store/slices/auth/thunks';
 
 export function LoginPage() {
   const [email, setEmail] = useState('');

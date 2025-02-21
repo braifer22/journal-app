@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { Button } from './Button';
 import { NothingSelectedView } from './views/NothingSelectedView';
-import { logOutAccount } from '../store/slices/thunks';
+import { logOutAccount } from '../store/slices/auth/thunks';
 
 export function Content() {
   const dispatch = useDispatch();

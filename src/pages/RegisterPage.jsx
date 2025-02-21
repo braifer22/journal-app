@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router';
 import { Button } from '../components/Button';
 import { AuthLayout } from '../layouts/AuthLayout';
-import { createAccount } from '../store/slices/thunks';
+import { createAccount } from '../store/slices/auth/thunks';
 
 export function RegisterPage() {
   const [username, setUsername] = useState('');

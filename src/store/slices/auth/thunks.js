@@ -1,4 +1,4 @@
-import { loginProvider, logoutProvider, registerProvider } from '../../firebase/providers';
+import { loginProvider, logoutProvider, registerProvider } from '../../../firebase/providers';
 import { login, logout, startCheckingStatus } from './authSlice';
 
 export function createAccount(displayName, email, password) {
