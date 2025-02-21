@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@layer base {
+
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
+}
+
+@theme {
+	--color-primary: #000035;
+}
+
+:root {
+	font-family: Helvetica Neue;
+}
+
+#root {
+	min-height: 100vh;
+}
+
+@utility pattern-valid-* {
+	&:not(:placeholder-shown):valid {
+		border-color: --value(--color-*);
+	}
+}
+
+@utility pattern-invalid-* {
+	&:not(:placeholder-shown):invalid {
+		border-color: --value(--color-*);
+	}
+}
+
+.scroll-design {
+	scrollbar-width: thin;
+}
