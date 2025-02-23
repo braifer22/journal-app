@@ -8,11 +8,9 @@ export function createAccount(displayName, email, password) {
     const res = await registerProvider(email, password, displayName);
 
     if (!res.ok) {
-      console.log('Resultado de loginProvider:', res);
       return dispatch(logout(res));
     }
 
-    console.log('Resultado de loginProvider:', res);
     return dispatch(login(res));
   };
 }
@@ -24,11 +22,9 @@ export function logInAccount(email, password) {
     const res = await loginProvider(email, password);
 
     if (!res.ok) {
-      console.log('Resultado de loginProvider:', res);
       return dispatch(logout(res));
     }
 
-    console.log('Resultado de loginProvider:', res);
     return dispatch(login(res));
   };
 }
