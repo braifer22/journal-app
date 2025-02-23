@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import { Button } from './Button';
 import { NothingSelectedView } from './views/NothingSelectedView';
 import { logOutAccount } from '../store/slices/auth/thunks';
+import { NoteView } from './views/NoteView';
 
 export function Content() {
   const dispatch = useDispatch();
@@ -18,7 +19,8 @@ export function Content() {
         <h1 className="text-lg">Journal App</h1>
         <Button onClick={handleLogout}>Cerrar sesión</Button>
       </header>
-      <NothingSelectedView />
+      {/* <NothingSelectedView /> */}
+      <NoteView />
     </main>
   );
 }
